@@ -1,15 +1,23 @@
 {
-  "name": "full-backend-nodejs",
+  "name": "backend-nodejs",
   "version": "1.0.0",
-  "description": "Coding backend nodejs ",
+  "description": "Nodejs and Expressjs",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "keywords": [
-    "nodejs"
-  ],
-  "author": "thanh dat",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thanhdatdevelopers/Basic-NodeJS.git"
+  },
+  "author": "Thanh Dat Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thanhdatdevelopers/Basic-NodeJS/issues"
+  },
+  "homepage": "https://github.com/thanhdatdevelopers/Basic-NodeJS#readme",
+  "dependencies": {
+    "express": "4.18.2"
+  }
 }
