@@ -1,8 +1,12 @@
 const express = require('express')
 const path = require('path')
+require('dotenv').config()
+
+console.log('env: ', process.env);
 
 const app = express()
-const port = 9090
+const port = process.env.PORT || 8888
+const hostname = process.env.HOST_NAME
 
 // config template engine
 app.set('views', path.join(__dirname, 'views'))
@@ -21,6 +25,6 @@ app.get('/routes', (req, res) => {
   res.send('<h1>Check routes</h1>')
 })
 
-app.listen(port, () => {
+app.listen(port, hostname, () => {
   console.log(`App listening on port ${port}`)
 })
